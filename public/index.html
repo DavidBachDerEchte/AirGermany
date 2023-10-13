@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Martian+Mono:wght@100;200;300;400;500;600;700;800&family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/startseite.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/startseite.js" defer></script>
+    <title>Air Germany</title>
+</head>
+<body>
+
+<header>
+    <div class="nav">
+        <div class="center">
+            <div class="header-logo">
+                <div class="left">
+                    <img src="./images/airgermany-logo.jpg" width="75" height="75" alt="AirGermany-Logo" class="airgermany-logo-class">
+
+                    <h1 class="first-line-auswahl">Air Germany</h1>
+                </div>
+                <div class="right">
+                    <h2 class="h2 first-line-auswahl">
+                        <img src="./images/person.png" width="19" height="19" alt=""
+                             class="img">Login</h2>
+
+                    <h2 class="h2 first-line-auswahl">
+                        <img src="./images/deutsch.png" width="22" height="22" alt=""
+                             class="img">Sprachauswahl</h2>
+
+                    <h2 class="h2 first-line-auswahl">
+                        <img src="./images/suche.png" width="22" height="22" alt=""
+                             class="img">Suchen</h2>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="center">
+            <ul class="second-line">
+                <li>
+                    <a href="./forwordpage.html" class="h2 li-item">Home</a>
+                </li>
+                <li>
+                    <a href="./forwordpage.html" class="h2 li-item">Buchen</a>
+                </li>
+                <li>
+                    <a href="./forwordpage.html" class="h2 li-item">Buchungen verwalten</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="h2 dropdown-btn">Sonderangebote</button>
+                        <div class="dropdown-content">
+                            <a href="./forwordpage.html" class="h2">Monatliche Angebote</a>
+                            <a href="./forwordpage.html" class="h2">Sonderflüge</a>
+                            <a href="./forwordpage.html" class="h2">Prämienflüge</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="h2 dropdown-btn">Kundenservice</button>
+                        <div class="dropdown-content">
+                            <a href="./forwordpage.html" class="h2">Email</a>
+                            <a href="./forwordpage.html" class="h2">Telefon</a>
+                            <a href="./forwordpage.html" class="h2">Standorte</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</header>
+
+<main>
+    <div class="main">
+        <div class="center">
+            <div class="flugcheck">
+                <img src="./images/main-background-img.jpg" class="flugcheck-background" alt="">
+                <div class="search-feld">
+                    <form class="suche-center">
+                        <input type="radio" required id="flugtype1" name="flugtype" value="hinundzurück">
+                        <label for="flugtype1">Hin- und Rückflug</label>
+                        <input type="radio" required id="flugtype2" name="flugtype" value="hin">
+                        <label for="flugtype2">Hinflug</label>
+                        <br>
+                        <label for="von">Von*</label>
+                        <input type="text" id="von" name="von" required placeholder="Dein Flughafen">
+                        <label for="nach">Nach*</label>
+                        <input type="text" id="nach" name="nach" required placeholder="Ziel Flughafen">
+                        <div class="date-input1">
+                            <label for="Daten1">Von wann*</label>
+                            <input type="date" id="Daten1" name="daten1" required>
+                        </div>
+                        <br>
+                        <div class="date-input2">
+                            <label for="Daten2">Bis wann*</label>
+                            <input type="date" id="Daten2" name="daten2" required>
+                        </div>
+                        <div id="reisende" class="dropdown-fc">
+                            <h2 id="menu-btn" class="h2 dropdown-btn-fc">Reisende</h2>
+                            <div id="menu" class="dropdown-content-fc">
+                                <label for="erwachsene">Erwachsene</label>
+                                <select id="erwachsene" required>
+                                    <option value="0">0</option>
+                                    <option selected value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                                <label for="senioren">Senioren</label>
+                                <select id="senioren" required>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                                <label for="kinder">Kinder</label>
+                                <select id="kinder" required>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <label for="klasse">Klasse*</label>
+                        <select id="klasse" required>
+                            <option value="economy">Economy</option>
+                            <option value="premiumeconomy">Premium Economy</option>
+                            <option value="business">Business</option>
+                            <option value="first">First</option>
+                        </select>
+                        <input type="submit" value="Suche" onclick="window.location.href = './forwardpage.html'">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-next-adventure">
+            <h2>Planen Sie Ihr nächstes Abenteuer</h2>
+        </div>
+
+        <div class="top-city">
+            <div class="first-image">
+                <a href="./forwordpage.html"><img src="./images/LA.jpg" alt="" class="city-img"></a>
+                <h2 class="city">Los Angeles</h2>
+            </div>
+            <div class="second-image">
+                <a href="./forwordpage.html"><img src="./images/tokyo.jpg" alt="" class="city-img"></a>
+                <h2 class="city">Tokyo</h2>
+            </div>
+        </div>
+
+
+    </div>
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="footer-text">
+            <ul>
+                <li>
+                    <h2 class="link">Kundenservice</h2>
+                    <ul>
+                        <li>
+                            <a href="./forwordpage.html" class="links"><h2>Email</h2></a>
+                        </li>
+                        <li>
+                            <a href="./forwordpage.html" class="links"><h2>Telefon</h2></a>
+                        </li>
+                        <li>
+                            <a href="./forwordpage.html" class="links"><h2>Standorte</h2></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <ul>
+                <li>
+                    <h2 class="link">Sonderangebote</h2>
+                    <ul>
+                        <li>
+                            <a href="./forwordpage.html" class="links"><h2>Monatliche Angebote</h2></a>
+                        </li>
+                        <li>
+                            <a href="./forwordpage.html" class="links"><h2>Sonderflüge</h2></a>
+                        </li>
+                        <li>
+                            <a href="./forwordpage.html" class="links"><h2>Prämienflüge</h2></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h2 class="link">Rechtliches</h2>
+                    <ul>
+                        <li>
+                            <a href="./forwordpage.html" class="links"><h2>Impressum</h2></a>
+                        </li>
+                        <li>
+                            <a href="./forwordpage.html" class="links"><h2>Datenschutz</h2></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

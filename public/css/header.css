@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.airgermany-logo-class {
+    border-radius: 99999px;
+}
+
+:root {
+    --header-color: white;
+    --header-bgcolor: #262626;
+    --h2anddropdown-fontsize: 20px;
+    --h1-fontsize: calc(var(--h2anddropdown-fontsize) + 10px);
+}
+
+h1 {
+    font-family: Kanit;
+    font-size: var(--h1-fontsize);
+    font-weight: 600;
+    color: var(--header-color);
+}
+
+.h2 {
+    display: inline-flex;
+    font-family: Kanit;
+    font-size: var(--h2anddropdown-fontsize);
+    font-weight: 600;
+    color: var(--header-color);
+}
+
+.first-line-auswahl {
+    cursor: pointer;
+    user-select: none;
+}
+
+.img {
+    display: inline-flex;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.dropdown-btn {
+    font-size: var(--h2anddropdown-fontsize);
+    border: none;
+    background-color: var(--header-bgcolor);
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    font-size: var(--h2anddropdown-fontsize);
+    display: none;
+    position: absolute;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: var(--header-bgcolor);
+    color: var(--header-color);
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: var(--header-color);
+    font-family: Kanit;
+    font-size: var(--h2anddropdown-fontsize);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    opacity: 0.7;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.second-line {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    align-items: center;
+    gap: 40px;
+}
+
+.second-line .li-item:hover {
+    opacity: 0.7;
+}
+
+.nav {
+    background-color: var(--header-bgcolor);
+}
+
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 100%;
+    margin-right: 5px;
+    margin-top: 10px;
+    gap: 330px;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right h2 {
+    margin-left: 20px;
+    color: var(--header-color);
+}
+
+.center {
+    display: flex;
+    justify-content: center; /* In der horizontalen Mitte zentrieren */
+    padding: 0 20px; /* 20px Padding auf beiden Seiten */
+}
+
+
+.first-line {
+    display: inline-flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    gap: 40px;
+    margin: 0 20px;
+    padding: 0;
+    position: fixed;
+    right: 0;
+}
+
+.li-item {
+    text-decoration: none;
+    color: var(--header-color);
+}
