@@ -4,6 +4,10 @@
     --main-opposidecolor: white;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .flugcheck {
     position: relative;
 }
